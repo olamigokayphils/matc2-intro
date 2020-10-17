@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+body {
+  background-color: #f2f2f2;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-container {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.main-content {
+  line-height: 1.3em;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main-image {
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.main-button {
+  background-color: #266ddc;
+  border: none;
+  color: #ffffff;
+  padding: 10px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  width: 100%;
+  width: -webkit-fill-available;
+}
+
+.social-handle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
