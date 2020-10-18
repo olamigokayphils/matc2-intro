@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is a HTML tite. It is displayed at the top of the tab bar in a browser -->
+    <title>Good Afternoon</title>
+  </head>
+  <body>
+    <style>
+      #topParagraph {
+        text-align: center;
+        color: green;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .generics {
+        color: indigo;
+      }
+
+      .box-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .box-display > div {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        border-radius: 30px;
+      }
+
+      #box1 {
+        background-color: red;
+      }
+      #box2 {
+        background-color: rgb(200, 200, 117);
+      }
+
+      #box3 {
+        background-color: rgb(64, 126, 64);
+      }
+
+      #buttonContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      #main-button {
+        background: rgb(200, 200, 117);
+        padding: 15px;
+        color: black;
+        border-color: grey;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 7px;
+        box-shadow: 0 0 8px gray;
+      }
+    </style>
+
+    <p id="topParagraph">This is a new HTML file</p>
+    <h1 class="generics">This is the Biggest</h1>
+    <div class="box-display">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+    </div>
+    <div id="buttonContainer">
+      <button id="main-button">Click me</button>
+    </div>
+  </body>
+</html>
