@@ -1,0 +1,15 @@
+# Definition of terms 
+	- Computer - Algorithm
+	- Programming
+	- Variable Assignment Operation 
+		- var 
+		- let 
+		- const 
+	- Data Type: 
+		- String: "" 
+		- Number: Multiple of (1 - 10) 
+		- Boolean: True or False 	
+		- Undefined: Nothing or None 	
+	- Data Structure: 
+		- Array
+		- Object
