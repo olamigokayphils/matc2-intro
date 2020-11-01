@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  margin: 0;
+}
+html,
+body {
+  margin: inherit;
+  font-family: "Questrial", sans-serif;
+}
+.navbar {
+  background-color: rgb(103, 194, 103);
+  height: 70px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #f3f3f3;
+}
+
+.main-board {
+  width: 800px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.activity-form {
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.form-input {
+  width: 100%;
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+.form-input:active,
+.form-input:focus {
+  border: 1px solid green;
+}
+
+.form-button {
+  background-color: greenyellow;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-button:active {
+  border: 2px solid rgb(37, 37, 37);
+  outline: none;
+}
+
+.activity-list-title {
+  margin-top: 50px;
+}
+
+.activity-list {
+  margin-top: 10px;
+}
+
+.activity-list-item {
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.checkbox {
+  margin-left: 5px;
+}
+.trash {
+  color: grey;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: red;
+}
