@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimationII</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #d6daeb;
+      }
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgb(243, 115, 69);
+        animation-name: mybox;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes mybox {
+        from {
+          margin-top: 80px;
+        }
+
+        to {
+          margin-top: 0px;
+        }
+      }
+
+      .box-shadow {
+        height: 20px;
+        width: 100px;
+        background: radial-gradient(50% 50%, gray 0%, #d6daeb 100%);
+        margin-top: 200px;
+        position: absolute;
+        animation-name: shadow;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes shadow {
+        from {
+          width: 50px;
+        }
+
+        to {
+          width: 100px;
+        }
+      }
+    </style>
+
+    <div class="box-container">
+      <div class="box"></div>
+      <div class="box-shadow"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  font-family: "Questrial", sans-serif;
+}
+
+.box {
+  margin: calc(100vh * 0.35) auto 0 auto;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 2s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: white;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 0 0;
+  }
+
+  25% {
+    background-color: rgb(150, 150, 187);
+    left: 300px;
+    top: 0;
+    border-radius: 0 50% 50% 50%;
+  }
+
+  50% {
+    background-color: rgb(143, 114, 167);
+    left: 300px;
+    top: 300px;
+    border-radius: 0 50% 50% 50%;
+  }
+
+  75% {
+    background-color: blueviolet;
+    left: 0;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+
+  100% {
+    background-color: #333333;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 0 0;
+  }
+}
+
+.intro-text {
+  width: 1px;
+  display: block;
+  overflow: hidden;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  position: relative;
+
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease-in;
+}
+
+.intro-text-animate {
+  width: 800px;
+}

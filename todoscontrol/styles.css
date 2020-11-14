@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  padding: inherit;
+  margin: inherit;
+  font-family: "Questrial", sans-serif;
+  background-image: url("https://image.freepik.com/free-vector/white-gray-background-with-diagonal-lines-pattern_1017-25100.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: rgb(103, 194, 103);
+  height: 70px;
+  display: flex;
+}
+
+.logo {
+  /**top right bottom left */
+  /*margin: auto 0 auto 20px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #f3f3f3;
+}
+
+.main-board {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+}
+
+.activity-form {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 0;
+  gap: 5px;
+}
+
+.form-input {
+  width: 100%;
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 4px rgb(119, 119, 119);
+}
+
+.form-input:active,
+.form-input:focus {
+  border: 1.3px solid green;
+}
+
+.form-button {
+  display: inline;
+  background-color: greenyellow;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 4px 4px rgb(119, 119, 119);
+}
+
+.form-button:active {
+  border: 2px solid rgb(37, 37, 37);
+}
+
+.activity-list-title {
+  margin-top: 50px;
+}
+
+.activity-list {
+  margin-top: 10px;
+  padding: 10xp;
+}
+
+.activity-list-item {
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox {
+  margin-left: 5px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.trash {
+  color: grey;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: red;
+}

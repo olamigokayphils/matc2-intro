@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h3 class="intro-text">Hi there!</h3>
+    </div>
+    <script>
+      const box = document.querySelector(".box");
+      const introText = document.querySelector(".intro-text");
+      box.addEventListener("animationend", function () {
+        introText.classList.add("intro-text-animate");
+      });
+    </script>
+  </body>
+</html>
